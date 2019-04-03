@@ -1,0 +1,10 @@
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/0.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/0.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/1.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/1.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/2.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/2.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/3.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/3.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/4.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/4.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/5.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/5.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/6.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/6.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/7.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/7.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/8.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/8.png
+/home/tpatten/Data/DeepSceneSeg/nyu_test/original/9.png /home/tpatten/Data/DeepSceneSeg/nyu_test/label/9.png

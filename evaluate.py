@@ -20,6 +20,7 @@ import numpy as np
 import tensorflow as tf
 import yaml
 from dataset.helper import *
+import matplotlib.pyplot as plt
 
 PARSER = argparse.ArgumentParser()
 PARSER.add_argument('-c', '--config', default='config/cityscapes_test.config')
@@ -43,6 +44,7 @@ def test_func(config):
     import_variables = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES)
     print 'total_variables_loaded:', len(import_variables)
     saver = tf.train.Saver(import_variables)
+    print 'checkpoint', config['checkpoint']
     saver.restore(sess, config['checkpoint'])
     sess.run(iterator.initializer)
     step = 0
@@ -51,9 +53,14 @@ def test_func(config):
     while 1:
         try:
             img, label = sess.run([data_list[0], data_list[1]])
+            print data_list[0]
             feed_dict = {images_pl : img}
             probabilities = sess.run([model.softmax], feed_dict=feed_dict)
             prediction = np.argmax(probabilities[0], 3)
+            print "Image", step
+            plt.imshow(img[0])
+            #plt.imshow(prediction[0])
+            plt.show()
             gt = np.argmax(label, 3)
             prediction[gt == 0] = 0
             output_matrix = compute_output_matrix(gt, prediction, output_matrix)
