@@ -58,8 +58,8 @@ def test_func(config):
             probabilities = sess.run([model.softmax], feed_dict=feed_dict)
             prediction = np.argmax(probabilities[0], 3)
             print "Image", step
-            plt.imshow(img[0])
-            #plt.imshow(prediction[0])
+            #plt.imshow(img[0])
+            plt.imshow(prediction[0])
             plt.show()
             gt = np.argmax(label, 3)
             prediction[gt == 0] = 0
