@@ -73,7 +73,7 @@ def test_func(config, image_file):
     saver.restore(sess, config['checkpoint'])
 
     input_img = cv2.imread(image_file)
-    img = np.zeros(shape=(1, 480, 640, 3))
+    img = np.zeros(shape=(1, config['height'], config['width'], 3))
     img[0][:] = input_img
     img = img.astype(float)
     feed_dict = {images_pl : img}
